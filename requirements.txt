@@ -9,3 +9,4 @@ balderhub-gui
 balderhub-webdriver
 balderhub-selenium
 balderhub-url
+balderhub-crud
