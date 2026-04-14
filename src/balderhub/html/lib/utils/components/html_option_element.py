@@ -1,3 +1,5 @@
+from typing import Any
+
 from .html_element import HtmlElement
 
 
@@ -12,3 +14,10 @@ class HtmlOptionElement(HtmlElement):
         :return: True if the option is selected otherwise False
         """
         return self.bridge.is_selected()
+
+    def get_value(self) -> Any:
+        """
+        This method returns the value of the option.
+        :return: the value of the option
+        """
+        return self.bridge.get_attribute('value')
