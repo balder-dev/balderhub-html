@@ -14,3 +14,9 @@ class HtmlPasswordInput(AbstractHtmlInputElement, TypeableMixin):
             self._bridge.clear()
 
         return self._bridge.send_keys(text)
+
+    def clear(self):
+        """
+        Clears html input element.
+        """
+        return self.bridge.clear()
