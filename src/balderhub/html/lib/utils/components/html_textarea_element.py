@@ -8,6 +8,13 @@ class HtmlTextareaElement(HtmlElement, TypeableMixin):
     The element is implemented like described here: https://developer.mozilla.org/en-US/docs/Web/API/HTMLTextAreaElement
     """
 
+    @property
+    def value(self):
+        """
+        :return: returns the value attribute of this textarea element
+        """
+        return self.bridge.get_attribute("value")
+
     def type_text(self, text: str, clean_before: bool = False):
         if clean_before:
             self._bridge.clear()
