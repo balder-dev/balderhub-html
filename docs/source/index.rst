@@ -89,3 +89,4 @@ read more about that in the `Examples section <Examples>`_.
    features.rst
    examples.rst
    utilities.rst
+   contrib.rst
