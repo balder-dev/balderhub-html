@@ -9,3 +9,10 @@ class AbstractHtmlInputElement(HtmlElement, ABC):
 
     The element is implemented like described here: https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement
     """
+
+    @property
+    def value(self):
+        """
+        :return: returns the value attribute of this input element
+        """
+        return self.bridge.get_attribute("value")
