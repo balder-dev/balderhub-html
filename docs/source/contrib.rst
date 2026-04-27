@@ -9,6 +9,31 @@ If you want to install this package with support for all CONTRIB packages, you c
 
     >>> pip install balderhub-html[all]
 
+Contrib for ``balderhub-auth``
+==============================
+
+For activating this module, you need to install the package like shown below
+
+.. code-block:: none
+
+    >>> pip install balderhub-html[auth]
+
+Once installed you can use it.
+
+Pages
+-----
+
+.. autoclass:: balderhub.html.contrib.auth.pages.LoginPage
+    :members:
+
+
+Setup Features
+--------------
+
+.. autoclass:: balderhub.html.contrib.auth.setup_features.UserLoginFeature
+    :members:
+
+
 Contrib for ``balderhub-crud``
 ==============================
 
