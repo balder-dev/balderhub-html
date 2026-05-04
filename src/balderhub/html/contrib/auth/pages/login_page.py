@@ -9,7 +9,11 @@ from balderhub.url.lib.utils import Url
 class LoginPage(balderhub.html.lib.scenario_features.HtmlPage):
     """
     HTML Page for normal login pages as abstract base class - all abstract methods/properties needs to be defined in
-    subclass
+    subclass.
+
+    .. image:: /_static/LoginPage.svg
+        :align: center
+        :alt: Wireframe of a Login Page
     """
 
     @property
