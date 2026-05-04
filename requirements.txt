@@ -10,4 +10,5 @@ balderhub-webdriver
 balderhub-selenium
 balderhub-url
 balderhub-crud
-balderhub-auth~=0.0.1b1
+balderhub-auth~=0.0.1b3
+balderhub-email~=0.0.1b0
