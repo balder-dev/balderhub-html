@@ -21,7 +21,14 @@ author = 'Max Stahlschmidt & others'
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
-extensions = ['sphinx.ext.autodoc']
+extensions = [
+    'sphinx.ext.autodoc',
+    'sphinx.ext.intersphinx',
+]
+
+intersphinx_mapping = {
+    'balderhub-auth': ('https://hub.balder.dev/projects/auth/en/latest/', None),
+}
 
 templates_path = ['_templates']
 exclude_patterns = []
@@ -32,6 +39,7 @@ exclude_patterns = []
 
 html_theme = 'sphinx_rtd_theme'
 html_static_path = ['_static']
+html_style = 'custom.css'
 
 # -- Autodoc settings --------------------------------------------------------
 
